@@ -1,0 +1,2 @@
+rootProject.name='Gold Charge Project'
+include ':app'
