@@ -1,12 +1,25 @@
 package com.example.goldchargeproject.data;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Embedded;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.Relation;
+
 import java.util.Date;
 
+@Entity(tableName = "gold_cards")
 public class GoldCard {
+    @PrimaryKey
     private int id;
+    @ColumnInfo(name = "description")
     private String Description;
+
+    @Embedded
+    @Relation(parentColumn = "student_id",entityColumn = "id")
     private Student student;
-    private Date isueDate;
+
+    private Date issueDate;
 
     public int getId() {
         return id;
@@ -32,11 +45,11 @@ public class GoldCard {
         this.student = student;
     }
 
-    public Date getIsueDate() {
-        return isueDate;
+    public Date getIssueDate() {
+        return issueDate;
     }
 
-    public void setIsueDate(Date isueDate) {
-        this.isueDate = isueDate;
+    public void setIssueDate(Date issueDate) {
+        this.issueDate = issueDate;
     }
 }

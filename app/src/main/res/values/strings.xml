@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Gold Charge Project</string>
+    <string name="preference_file_key">com.example.goldchargeproject</string>
+    <string name="USER_NAME">user_name_app</string>
+    <string name="USER_PASSWORD">passw0rd</string>
 </resources>
