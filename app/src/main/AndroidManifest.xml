@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DatabaseSearchResults"></activity>
+        <activity android:name=".DatabaseSearchForm" />
+        <activity android:name=".MonthlyDrawing_Admin" />
+        <activity android:name=".AddNewStudent_Admin" />
+        <activity android:name=".AddNewUser_Admin" />
+        <activity android:name=".GoldCardForm" />
+        <activity android:name=".GoldCardHome" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
