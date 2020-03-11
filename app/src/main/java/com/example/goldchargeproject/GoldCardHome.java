@@ -13,7 +13,7 @@ public class GoldCardHome extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.GoldCardHome);
+        setContentView(R.layout.goldcardhome);
         imageView = (ImageView) findViewById(R.id.imageView2);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
