@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.goldchargeproject.data.Student;
+
 public class GoldCardHome extends AppCompatActivity {
     ImageView imageView;
+    Student selectedStudent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,7 @@ public class GoldCardHome extends AppCompatActivity {
 
     public void openActivity3(View view) {
         Intent intent = new Intent(this, GoldCardForm.class);
+        intent.putExtra("student",selectedStudent);
         startActivity(intent);
     }
 }
